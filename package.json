@@ -1,0 +1,9 @@
+{
+  "name": "use-ts-pro",
+  "scripts": {},
+  "author": "LeoKu <czc12580520@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}
