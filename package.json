@@ -1,9 +1,15 @@
 {
   "name": "use-ts-pro",
-  "scripts": {},
+  "scripts": {
+    "lint": "npm run lint:es && npm run lint:ts",
+    "lint:es": "eslint \"**/*.{mjs,js,jsx,ts,tsx}\"",
+    "lint:ts": "tsc --noEmit --skipLibCheck"
+  },
   "author": "LeoKu <czc12580520@gmail.com>",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "prefer-code-style": "^0.6.1",
     "typescript": "^4.6.4"
   }
 }
