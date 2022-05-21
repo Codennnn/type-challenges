@@ -5,13 +5,13 @@ interface Case {
   b: string
 }
 
-const todo: MyReadonly<Case> = {
+const testCase: MyReadonly<Case> = {
   a: 'x',
   b: 'x',
 }
 
 // @ts-expect-error
-todo.a = 'y'
+testCase.a = 'y'
 
 // @ts-expect-error
-todo.b = 'y'
+testCase.b = 'y'
