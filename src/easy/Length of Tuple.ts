@@ -2,7 +2,7 @@ import type { Equal, Expect } from '@type-challenges/utils'
 
 type Example = ['a', 'b', 'c', 'd']
 
-type ArrayLength<Array extends ReadonlyArray<any>> = Array['length']
+type ArrayLength<Arr extends ReadonlyArray<any>> = Arr['length']
 
 type Length = ArrayLength<Example>
 

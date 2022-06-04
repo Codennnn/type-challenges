@@ -1,6 +1,6 @@
 import type { Equal, Expect } from '@type-challenges/utils'
 
-type Concat<Array1 extends any[], Array2 extends any[]> = [...Array1, ...Array2]
+type Concat<Arr1 extends any[], Arr2 extends any[]> = [...Arr1, ...Arr2]
 
 type TestCase = Concat<[1], [2]>
 

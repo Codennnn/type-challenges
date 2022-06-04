@@ -1,6 +1,6 @@
 import type { Equal, ExpectTrue } from '@type-challenges/utils'
 
-type Includes<Array extends any[], Item> = Array extends [infer First, ...infer Rest]
+type Includes<Arr extends any[], Item> = Arr extends [infer First, ...infer Rest]
   ? Equal<First, Item> extends true
     ? true
     : Includes<Rest, Item>
