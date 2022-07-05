@@ -8,4 +8,6 @@ interface Case {
   c: string
 }
 
-type Passed = Expect<Equal<MyPick<Case, 'a' | 'b'>, { a: string; b: string }>>
+type TestCase = MyPick<Case, 'a' | 'b'>
+
+type Passed = Expect<Equal<TestCase, { a: string; b: string }>>
